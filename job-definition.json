@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "type": "container",
+  "meta": {
+    "trigger": "cli"
+  },
+  "ops": [
+    {
+      "type": "container/run",
+      "id": "nosana-mcp-agent",
+      "args": {
+        "cmd": [],
+        "image": "docker.io/YOUR_DOCKERHUB_USERNAME/nosana-mcp-agent:latest",
+        "gpu": true,
+        "expose": 3000,
+        "env": {
+          "PORT": "3000",
+          "NODE_ENV": "production",
+          "OLLAMA_MODEL": "qwen3.5:9b",
+          "OLLAMA_EMBEDDING_MODEL": "nomic-embed-text:latest",
+          "OLLAMA_HOST": "0.0.0.0:11434"
+        }
+      }
+    }
+  ]
+}

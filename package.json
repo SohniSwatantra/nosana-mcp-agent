@@ -1,0 +1,24 @@
+{
+  "name": "nosana-mcp-agent",
+  "version": "1.0.0",
+  "description": "ElizaOS AI agent with MCP support, deployed on Nosana decentralized GPU network",
+  "type": "module",
+  "scripts": {
+    "start": "bun run server.ts",
+    "start:mcp": "MCP_STDIO=true bun run server.ts",
+    "test": "bun run test-client.ts"
+  },
+  "dependencies": {
+    "@elizaos/core": "^1.0.0",
+    "@elizaos/plugin-mcp": "^2.0.0-alpha.6",
+    "@elizaos/plugin-ollama": "2.0.0-alpha.70",
+    "@elizaos/plugin-sql": "alpha",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "sharp": "^0.34.5",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/uuid": "^11.0.0"
+  }
+}
