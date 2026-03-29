@@ -2,7 +2,7 @@
 
 > ElizaOS AI agent + MCP tools + Qwen3.5 9B on decentralized GPU
 
-[![CI](https://github.com/YOUR_USERNAME/nosana-mcp-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/nosana-mcp-agent/actions/workflows/ci.yml)
+[![CI](https://github.com/SohniSwatantra/nosana-mcp-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/SohniSwatantra/nosana-mcp-agent/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 An open-source AI agent powered by **Qwen3.5 (9B)** running locally via Ollama on **Nosana's decentralized GPU network**. No external API keys needed for inference. Connects to external tools via **MCP (Model Context Protocol)**.
@@ -14,7 +14,7 @@ Fork it. Configure it. Deploy it to a GPU in one command.
 ## TL;DR — Deploy in 3 Commands
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nosana-mcp-agent.git && cd nosana-mcp-agent
+git clone https://github.com/SohniSwatantra/nosana-mcp-agent.git && cd nosana-mcp-agent
 make push DOCKER_USER=your-dockerhub-username
 make deploy NOSANA_MARKET=nvidia-a5000
 ```
@@ -153,8 +153,8 @@ docker run -p 3000:3000 nosana-mcp-agent
 ### Push to Docker Hub
 
 ```bash
-docker tag nosana-mcp-agent YOUR_USERNAME/nosana-mcp-agent:latest
-docker push YOUR_USERNAME/nosana-mcp-agent:latest
+docker tag nosana-mcp-agent SohniSwatantra/nosana-mcp-agent:latest
+docker push SohniSwatantra/nosana-mcp-agent:latest
 ```
 
 ## Deploy to Nosana
